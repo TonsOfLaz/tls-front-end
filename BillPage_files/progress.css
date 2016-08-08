@@ -1,0 +1,109 @@
+.progress-wrapper {
+  width: 100%;
+  margin-top: 2px;
+  /* whatever width you want */
+  position: relative;
+}
+.progress-wrapper:after {
+  padding-top: 8.33%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+
+.tls-progress-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url(/css/img/progress_sprite.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.progress-house-0 {
+	background-position: 0% 0%;
+}
+.progress-house-1 {
+	background-position: 0% 4%;
+}
+.progress-house-2 {
+	background-position: 0% 8%;
+}
+.progress-house-3 {
+	background-position: 0% 12%;
+}
+.progress-house-4 {
+	background-position: 0% 16%;
+}
+.progress-house-5 {
+	background-position: 0% 20%;
+}
+.progress-house-6 {
+	background-position: 0% 24%;
+}
+.progress-house-7 {
+	background-position: 0% 28%;
+}
+.progress-house-8 {
+	background-position: 0% 32%;
+}
+.progress-house-9 {
+	background-position: 0% 36%;
+}
+.progress-house-10 {
+	background-position: 0% 40%;
+}
+.progress-house-11 {
+	background-position: 0% 44%;
+}
+.progress-house-12 {
+	background-position: 0% 48%;
+}
+.progress-house-13 {
+	background-position: 0% 100.00%;
+}
+
+.progress-senate-0 {
+	background-position: 0% 0%;
+}
+.progress-senate-1 {
+	background-position: 0% 52%;
+}
+.progress-senate-2 {
+	background-position: 0% 56%;
+}
+.progress-senate-3 {
+	background-position: 0% 60%;
+}
+.progress-senate-4 {
+	background-position: 0% 64%;
+}
+.progress-senate-5 {
+	background-position: 0% 68%;
+}
+.progress-senate-6 {
+	background-position: 0% 72%;
+}
+.progress-senate-7 {
+	background-position: 0% 76%;
+}
+.progress-senate-8 {
+	background-position: 0% 80%;
+}
+.progress-senate-9 {
+	background-position: 0% 84%;
+}
+.progress-senate-10 {
+	background-position: 0% 88%;
+}
+.progress-senate-11 {
+	background-position: 0% 92%;
+}
+.progress-senate-12 {
+	background-position: 0% 96%;
+}
+.progress-senate-13 {
+	background-position: 0% 100.00%;
+}
