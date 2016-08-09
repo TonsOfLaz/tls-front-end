@@ -1,0 +1,29 @@
+.table-legend .table {
+  margin-bottom: 0;
+}
+
+.table-legend .table td {
+  border: none;
+}
+
+.table-legend ol, .table-legend li {
+  margin: 0 5px;
+  padding: 0 5px;
+}
+
+.main-table table th, .main-table table td {
+  text-align: center;
+}
+
+.main-table table th:first-child,
+.main-table table tr td:first-child,
+.main-table table th:last-child,
+.main-table table tr td:last-child {
+  text-align: left;
+}
+
+/*
+.main-table table tr.info th {
+  background-color: #0372a4;
+  color: #fff;
+}*/
