@@ -142,7 +142,7 @@ table.normal-table {
     height: 26px;
     position: absolute;
     right: 10px;
-    top: 0;
+    top: -2px;
     width: 26px;
     z-index: 5;
     background: transparent;
@@ -433,7 +433,7 @@ small {
     color: #0372a4;
 }
 #bottom-wrapper {
-    
+    overflow: hidden;
 }
 .line {
 	/*border-bottom: 1px solid #ddd;*/

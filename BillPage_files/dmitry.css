@@ -6,8 +6,23 @@
   }
 }
 
+/* Adjustments for top main navbar */
 
-@media (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 891px) {
+  #logo-wrapper a {
+    width: 90px;
+  }
+  #search_form {
+    margin-left: 5px;
+    width: 150px;
+  }
+  #main-nav .navbar-right > li > a {
+    padding: 15px 10px;
+  }
+}
+
+
+@media (max-width: 991px) {
   .category-title .progress-wrapper {
     width: 45%;
     margin-left: 15px;
@@ -23,7 +38,7 @@
 
 /* Small devices, Tablets (up to 768px)  */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #main-nav {
     text-align: center;
   }
@@ -37,10 +52,17 @@
     width: auto;
   }
   #side-menu {
-    padding-top: 56px;
+    padding-top: 59px;
+    margin-bottom: -59px;
   }
   #search_form {
     margin-top: 10px;
+  }
+  #admin-link {
+    padding-top: 59px;
+  }
+  #pjax-container h4 {
+    margin: 20px 0 0 0;
   }
 }
 
@@ -66,8 +88,14 @@
   .info-header .nav > li > a {
     padding: 10px 5px;
   }
-
+  
   #search_form {
     width: 100%;
+  }
+  .main-table .table-condensed {
+    font-size: 0.8em;
+  }
+  .main-table .table-condensed > tbody > tr > td {
+    padding: 2px;
   }
 }

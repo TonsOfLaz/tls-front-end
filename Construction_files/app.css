@@ -430,7 +430,7 @@ small {
     color: #0372a4;
 }
 #bottom-wrapper {
-    
+    overflow: hidden;
 }
 .line {
 	/*border-bottom: 1px solid #ddd;*/
