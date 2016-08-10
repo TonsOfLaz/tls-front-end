@@ -17,7 +17,7 @@
 
 /* Responsive Table styles */
 
-@media (max-width: 574px), (min-width: 768px) and (max-width: 800px) {
+@media (max-width: 600px), (min-width: 768px) and (max-width: 873px) {
 
     table, thead, tbody, th, td, tr { 
       display: block; 

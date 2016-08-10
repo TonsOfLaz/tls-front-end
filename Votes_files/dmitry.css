@@ -19,12 +19,6 @@
 
 /* Adjustments for top main navbar and table-responsive */
 
-@media (min-width: 320px) and (max-width: 767px) {
-  .table-responsive tbody tr td:nth-child(4) {
-    white-space: normal;
-  }
-}
-
 @media (min-width: 768px) and (max-width: 891px) {
   #logo-wrapper a {
     width: 90px;
@@ -36,9 +30,6 @@
   #main-nav .navbar-right > li > a {
     padding: 15px 10px;
   }
-  .table-responsive > table {
-    font-size: 0.8em;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -46,7 +37,7 @@
     margin: 10px auto;
     font-size: 0.9em;
   }
-  .table-responsive {
+  .table-condensed {
     margin-top: 10px;
   }
 }
@@ -83,7 +74,6 @@
   #side-menu {
     padding-top: 59px;
     margin-bottom: -59px;
-
   }
   #search_form {
     margin-top: 10px;
@@ -94,10 +84,10 @@
   #pjax-container h4 {
     margin: 20px 0 0 0;
   }
-  .table-responsive > table {
-    font-size: 0.8em;
-  }
   .input-wrapper {
+    font-size: 0.9em;
+  }
+  .table-condensed {
     font-size: 0.9em;
   }
 }
