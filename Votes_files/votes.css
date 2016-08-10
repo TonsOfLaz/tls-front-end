@@ -17,7 +17,11 @@
 
 /* Responsive Table styles */
 
-@media (max-width: 600px), (min-width: 768px) and (max-width: 873px) {
+.votes-table a {
+  vertical-align: middle;
+}
+
+@media (max-width: 600px), (min-width: 768px) and (max-width: 915px) {
 
     table, thead, tbody, th, td, tr { 
       display: block; 
@@ -34,14 +38,14 @@
     td { 
       border: none;
       position: relative;
-      padding-left: 50% !important; 
+      padding-left: 40% !important; 
     }
 
     td:before { 
       position: absolute;
-      top: 4px;
+      top: 8px;
       left: 6px;
-      width: 45%; 
+      width: 35%; 
       padding-right: 10px; 
       white-space: nowrap;
       font-weight: bold;
