@@ -407,7 +407,7 @@
                                                             <div id="admin-link">
                                     <ul class="nav admin-link">
                                         <li>
-                                            <a href="http://tls.local/admin" data-toggle="collapse" data-target="#side-menu-admin" data-parent="#menu">
+                                            <a href="#" data-toggle="collapse" data-target="#side-menu-admin" data-parent="#menu">
                                                 <i class="fa fa-key fa-fw"></i> 
                                                 Admin Tools
                                                 <span style="margin-top: 5px" class="glyphicon glyphicon-arrow-up pull-right"></span></a>
@@ -511,16 +511,16 @@
 
 
 <div class="row info-header">
-	<div class="col-lg-6 col-md-6 col-sm-9">
+	<div class="col-lg-6 col-md-4 col-sm-12">
 	<h1>Senate Votes</h1>
 	</div>
-	<div class="col-lg-3 col-md-2 col-sm-3">
+	<div class="col-lg-3 col-md-4 col-sm-6">
 		<a href="http://tls.local/2015-2016/votes/house" class="btn btn-lg btn-default btn-block" style="margin: 15px 0px;">
 		   View House Votes</a>
 
 		
 	</div>
-	<div class="col-lg-3 col-md-4">
+	<div class="col-lg-3 col-md-4 col-sm-6">
 	<a href="http://tls.local/2015-2016/votes/senate/scorecard" class="btn btn-lg btn-primary btn-block" style="margin: 15px 0px;">
 		   Senate Scorecard</a>
 	</div>
@@ -528,45 +528,51 @@
 
 
 <div class="row">
-	<div class="col-md-1">Type:</div>
-	<div class="col-md-5">
-		<label class="radio-inline">
-			<input autocomplete="off" name="type" value="all" checked="checked" type="radio">
-			All
-		</label>
 
-		<label class="radio-inline">
-			<input autocomplete="off" name="type" value="floor" type="radio">
-			Floor
-		</label>
+<div class="col-sm-12 col-md-5 col-lg-6">
+      <div class="input-group input-wrapper">
+        <div class="input-group-addon">Type</div>
+        <label class="radio-inline">
+          <input autocomplete="off" name="type" value="all" checked="checked" type="radio">
+          All
+        </label>
 
-		<label class="radio-inline">
-			<input autocomplete="off" name="type" value="committee" type="radio">
-			Committee
-		</label>
-	</div>
+        <label class="radio-inline">
+          <input autocomplete="off" name="type" value="floor" type="radio">
+          Floor
+        </label>
 
-	<div class="col-md-1">Preference:</div>
-	<div class="col-md-5">
-		<label class="radio-inline">
-			<input autocomplete="off" name="preference" value="all" checked="checked" type="radio">
-			All
-		</label>
-
-		<label class="radio-inline">
-			<input autocomplete="off" name="preference" value="with" type="radio">
-			With Preference
-		</label>
-
-		<label class="radio-inline">
-			<input autocomplete="off" name="preference" value="without" type="radio">
-			Without Preference
-		</label>
-	</div>
+        <label class="radio-inline">
+          <input autocomplete="off" name="type" value="committee" type="radio">
+          Committee
+        </label>
+      </div>
 </div>
 
+<div class="col-sm-12 col-md-7 col-lg-6">
+  <div class="input-group input-wrapper">
+    <div class="input-group-addon">Preferences</div>
+    <label class="radio-inline">
+      <input autocomplete="off" name="preference" value="all" checked="checked" type="radio">
+      All
+    </label>
 
-<table class="table">
+    <label class="radio-inline">
+      <input autocomplete="off" name="preference" value="with" type="radio">
+      With Preference
+    </label>
+
+    <label class="radio-inline">
+      <input autocomplete="off" name="preference" value="without" type="radio">
+      Without Preference
+    </label>
+  </div>
+</div>
+
+</div>
+
+<div class="table-responsive">
+<table class="table table-condensed">
 	<tbody><tr>
 		<th>Date</th>
 		<th>Chamber</th>
@@ -1630,7 +1636,7 @@
 		</td>
 	</tr>
 </tbody></table>
-
+  </div>
 </div>
 
    

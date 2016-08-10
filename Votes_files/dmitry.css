@@ -1,3 +1,20 @@
+/* Styles */
+
+.input-wrapper {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.input-wrapper .input-group-addon {
+  border: none;
+  padding: 5px 20px;
+}
+
+.input-wrapper .radio-inline {
+  margin-left: 15px;
+  padding: 5px 10px;
+}
+
 /* Media queries */
 
 @media (min-width: 768px) {
@@ -6,7 +23,16 @@
   }
 }
 
-/* Adjustments for top main navbar */
+/* Adjustments for top main navbar and table-responsive */
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .table-responsive tbody tr td:nth-child(4) {
+    max-width: 280px;
+  }
+  .table-responsive > .table > tbody > tr > td, .table-responsive > .table > tbody > tr > th, .table-responsive > .table > tfoot > tr > td, .table-responsive > .table > tfoot > tr > th, .table-responsive > .table > thead > tr > td, .table-responsive > .table > thead > tr > th {
+    white-space: normal;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 891px) {
   #logo-wrapper a {
@@ -19,8 +45,20 @@
   #main-nav .navbar-right > li > a {
     padding: 15px 10px;
   }
+  .table-responsive > table {
+    font-size: 0.8em;
+  }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .input-wrapper {
+    margin: 10px auto;
+    font-size: 0.9em;
+  }
+  .table-responsive {
+    margin-top: 10px;
+  }
+}
 
 @media (max-width: 991px) {
   .category-title .progress-wrapper {
@@ -65,7 +103,9 @@
   #pjax-container h4 {
     margin: 20px 0 0 0;
   }
-
+  .table-responsive > table {
+    font-size: 0.8em;
+  }
 }
 
 /* Extra Small Devices, Phones  */
