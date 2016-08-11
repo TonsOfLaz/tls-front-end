@@ -26,14 +26,35 @@
     // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {
-            top: 100
+            top: 50
         }
     });
 
-    
-
-    
-    
+  $(document).ready(function() {
+    $('.timeline-image').each(function() {
+      $(this).magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+          enabled: true,
+          navigateByImgClick: true,
+          preload: [0,1]
+        },
+      });
+    });
+  });
+  
+  $(document).ready(function() {
+    $('.start-timer').click(function(){
+      $('#countdown-timer').css('display', 'inline-block');
+    })
+  });
+  
+  $('.start-timer').click(function() {
+    var time = $(this).html();
+    alert(time);
+  });
 
 })(jQuery);
 
