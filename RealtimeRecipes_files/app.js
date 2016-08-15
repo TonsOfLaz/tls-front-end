@@ -45,38 +45,76 @@
     });
   });
   
-  $(document).ready(function() {
-    $('.start-timer').click(function(){
-      $('#countdown-timer').css('display', 'inline-block');
-    })
-  });
-  
-  $('.start-timer').click(function() {
-    var time = $(this).html();
-    alert(time);
-  });
-
 })(jQuery);
 
-jQuery(function ($) {
-    var fiveMinutes = 60 * 5,
-        display = $('#welcome-timer');
-    startTimer(fiveMinutes, display);
+// Countdown timer
+
+jQuery(function($) {
+
+  var paused;
+  var countdown;
+  
+  function startTimer(duration, display, step) {
+    var timer = duration;
+    var minutes;
+    var seconds;
+    countdown = setInterval(function () {
+      minutes = parseInt(timer / 60, 10);
+      seconds = parseInt(timer % 60, 10);
+
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      display.text(minutes + ":" + seconds);
+      display.append("<p>" + step + "</p>");
+      display.append("<div class='close-modal'><div class='lr'><div class='rl'</div></div></div>");
+
+      if (--timer < 0) {
+        clearInterval(countdown);
+        var snd = new Audio("https://s3-us-west-2.amazonaws.com/realtimerecipesimages/public/ding.mp3");
+        snd.play();
+      }
+    }, 1000);
+  }
+
+  $('.start-timer').on('click',function() {
+    if (countdown) {
+      clearInterval(countdown);
+    }
+    paused = false;
+    $('#countdown-timer').remove();
+    $('body').append("<div id='countdown-timer' class='btn btn-xl'></div>");
+    var mins = parseInt($(this).find('.mins').html());
+    var secs = parseInt($(this).find('.secs').html());
+    var step = $(this).siblings('.timeline-heading').find('h4').html();
+    var time = (mins*60) + (secs);
+    var display = $('#countdown-timer');
+    mins = mins < 10 ? "0" + mins : mins;
+    secs = secs < 10 ? "0" + secs : secs;
+    $('#countdown-timer').css('display', 'inline-block');
+    display.text(mins + ":" + secs);
+    display.append("<p>" + step + "</p>");
+    display.append("<div class='close-modal'><div class='lr'><div class='rl'</div></div></div>");
+    startTimer(time, display, step);
+  });
+  
+  $('body').on('click', '#countdown-timer .close-modal', function(){
+    $('#countdown-timer').fadeOut();
+    clearInterval(countdown);
+    countdown = null;
+  });
+  
+  $('body').on('click', '#countdown-timer',function(){
+    if (paused) {
+      var timer = $(this).text().split(':');
+      var step = $(this).find('p').html();
+      startTimer(Number(timer[0] * 60) + parseInt(timer[1]), $('#countdown-timer'), step);
+      paused = false;
+    } else {
+      clearInterval(countdown);
+      paused = true;
+    }
+  });
+  
 });
 
-function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
-
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.text(minutes + ":" + seconds);
-
-        if (--timer < 0) {
-            timer = duration;
-        }
-    }, 1000);
-}

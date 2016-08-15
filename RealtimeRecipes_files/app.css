@@ -696,7 +696,7 @@ ul.social-buttons li a:active {
 .portfolio-modal .modal-content img {
   margin-bottom: 30px;
 }
-.portfolio-modal .close-modal {
+.portfolio-modal .close-modal, .close-modal {
   position: absolute;
   width: 75px;
   height: 75px;
@@ -705,10 +705,10 @@ ul.social-buttons li a:active {
   right: 25px;
   cursor: pointer;
 }
-.portfolio-modal .close-modal:hover {
+.portfolio-modal .close-modal:hover, .close-modal:hover {
   opacity: 0.3;
 }
-.portfolio-modal .close-modal .lr {
+.portfolio-modal .close-modal .lr, .lr {
   height: 75px;
   width: 1px;
   margin-left: 35px;
@@ -720,7 +720,7 @@ ul.social-buttons li a:active {
   /* Safari and Chrome */
   z-index: 1051;
 }
-.portfolio-modal .close-modal .lr .rl {
+.portfolio-modal .close-modal .lr .rl, .rl {
   height: 75px;
   width: 1px;
   background-color: #222222;
@@ -761,7 +761,7 @@ body {
   font-size: 50px;
   border-radius: 4px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   #welcome-timer, #countdown-timer { 
     font-size: 100px;
   }  
@@ -769,6 +769,10 @@ body {
 
 #countdown-timer {
   display: none;
+  position: fixed;
+  top: 20%;
+  cursor: pointer;
+  z-index: 9999;
 }
 
 .ingredients-wrapper {
@@ -821,6 +825,10 @@ body {
   display: inline-block;
   vertical-align: middle;
   margin-top: 50%;
+
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -843,4 +851,72 @@ body {
 .footer-inverse ul.social-buttons li a:hover {
   background-color: #fed136;
   color: #fff;
+}
+
+
+.lr, .rl {
+  height: 40px;
+}
+
+.lr {
+  margin-left: 20px;
+}
+
+.close-modal {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  top: 5px;
+  right: 5px;
+}
+
+#top-stuff {
+  min-height: 800px;
+}
+
+@media (max-width:480px) {
+  .lr, .rl {
+    height: 20px;
+  }
+  .lr {
+    margin-left: 10px;
+  }
+  .close-modal {
+    height: 20px;
+    width: 20px;
+  }
+  #countdown-timer {
+    width: 100%;
+    top: 80%;
+    left: 0;
+  }
+  .navbar-brand {
+    padding: 15px 10px;
+  }
+  section h2.section-heading {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  #top-stuff {
+    min-height: 0;
+  }
+  .mfp-counter {
+    right: 20px;
+  }
+  .mfp-image-holder .mfp-close {
+    right: 8px;
+  }
+  .navbar-brand > img {
+    width: 60px !important;
+    margin-top: -16px !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  #countdown-timer {
+    top: 35%;
+    right: 0;
+  }
 }

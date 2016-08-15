@@ -43,7 +43,7 @@
 
 <body id="page-top" class="index">
 
-    <div id="top-stuff" style="min-height: 800px;">
+    <div id="top-stuff">
         
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top affix-top">
@@ -90,13 +90,13 @@
 	    <header style="background-color: black;
 	                   background-image:url(&#39;https://s3-us-west-2.amazonaws.com/realtimerecipesimages/public/570a8fd34c91bf6a7346f90f.jpeg&#39;);">
 	        <div class="container">
-	            <div class="intro-text" style="padding-top: 120px;">
+	            <div class="intro-text" style="padding-top: 160px;">
 	                
 	                <div class="intro-heading">Buffalo chicken Brooklyn pizza</div>
 	                <div class="intro-lead-in">a delicious pizza recipe, dough is made from scratch, this is not a quick and easy recipe!</div>
 	                <a href="#ingredients" class="page-scroll btn btn-xl">Begin</a>
 	                <br>
-	                <a href="http://recipes.local/recipes/570a8fd34c91bf6a7346f90f#begin" style="font-size: 50px;" class="page-scroll">
+	                <a href="#ingredients" style="font-size: 50px;" class="page-scroll">
 	                    <i class="fa fa-angle-double-down"></i>
 	                </a>
 	            </div>
@@ -196,12 +196,15 @@
                 </table>
               </div>
             </div>
+            <a href="#steps" style="font-size: 50px;" class="page-scroll">
+              <i class="fa fa-angle-double-down"></i>
+            </a>
           </div>
         </div>
       
-      <div id="countdown-timer" class="page-scroll btn btn-xl"></div>
+      <div id="countdown-timer" class="btn btn-xl"></div>
 
-      <button id="show-timer">Show timer</button>
+<!--      <button id="show-timer">Show timer</button>-->
       
     </section>
     
@@ -228,7 +231,7 @@
                 <div class="timeline-body">
                   <p class="text-muted">add 1 cup of lukewarm water to bowl, and add in the yeast and oil. Let sit for 3 to 5 minutes</p>
                 </div>
-                <button class="btn btn-primary start-timer">04:00</button>
+                <button class="btn btn-primary start-timer"><span class="mins">04</span>:<span class="secs">00</span></button>
               </div>
             </li>
             <li class="timeline-inverted">
@@ -243,8 +246,8 @@
                 </div>
                 <div class="timeline-body">
                   <p class="text-muted">mix the flour and salt together in a mixing bowl, and combine by mixing with a wooden spoon. Keep on adding flour 1/8 cup at a time, until the dough stops sticking to the sides. then, start to knead with your flour coated hands for 3 minutes. Start the timer before you get your hands dirty!</p>
-                  <button class="btn btn-primary start-timer">03:00</button>
                 </div>
+                <button class="btn btn-primary start-timer"><span class="mins">03</span>:<span class="secs">00</span></button>
               </div>
             </li>
             <li>
@@ -257,8 +260,8 @@
                 </div>
                 <div class="timeline-body">
                   <p class="text-muted">let dough rest for 15 minutes</p>
-                  <button class="btn btn-primary start-timer">15:00</button>
                 </div>
+                <button class="btn btn-primary start-timer"><span class="mins">15</span>:<span class="secs">00</span></button>
               </div>
             </li>
             <li class="timeline-inverted">
@@ -272,8 +275,8 @@
                 <div class="timeline-body">
                   <p class="text-muted">knead again for 3 minutes. I had to add more flour again, because it stuck to the bowl.
                   </p>
-                  <button class="btn btn-primary start-timer">03:00</button>
                 </div>
+                <button class="btn btn-primary start-timer"><span class="mins">03</span>:<span class="secs">00</span></button>
               </div>
             </li>
             <li>
@@ -290,7 +293,7 @@
                   <p class="text-muted">cut dough into 2 pieces, coat in Olive oil, and add each one to its own bowl. cover bowl, and place in fridge for 4 to 8 hours to rise.
                   </p>
                 </div>
-                <button class="btn btn-primary start-timer">04:00</button>
+                <button class="btn btn-primary start-timer"><span class="mins">04</span>:<span class="secs">00</span></button>
               </div>
             </li>
             <li class="timeline-inverted">
@@ -304,8 +307,8 @@
                 <div class="timeline-body">
                   <p class="text-muted">let the dough rest for 30 minutes, out of the fridge.
                   </p>
-                  <button class="btn btn-primary start-timer">30:00</button>
                 </div>
+                <button class="btn btn-primary start-timer"><span class="mins">30</span>:<span class="secs">00</span></button>
               </div>
             </li>
             <li>
@@ -345,7 +348,7 @@
                 <div class="timeline-body">
                   <p class="text-muted">add 1 cup of lukewarm water to bowl, and add in the yeast and oil. Let sit for 3 to 5 minutes</p>
                 </div>
-                <button class="btn btn-primary start-timer">06:00</button>
+                <button class="btn btn-primary start-timer"><span class="mins">06</span>:<span class="secs">00</span></button>
               </div>
             </li>
             <li class="timeline-inverted">
@@ -412,8 +415,8 @@
                 <div class="timeline-body">
                   <p class="text-muted">cook for 10 to 12 minutes.
                   </p>
-                  <button class="btn btn-primary start-timer">10:00</button>
                 </div>
+                <button class="btn btn-primary start-timer"><span class="mins">10</span>:<span class="secs">00</span></button>
               </div>
             </li>
             <li>
@@ -429,8 +432,8 @@
                 <div class="timeline-body">
                   <p class="text-muted">let cool for 5 minutes, after removing from oven. then slice it into 8 or 6 pieces.
                   </p>
-                  <button class="btn btn-primary start-timer">05:00</button>
                 </div>
+                <button class="btn btn-primary start-timer"><span class="mins">05</span>:<span class="secs">00</span></button>
               </div>
             </li>
           </ul>
