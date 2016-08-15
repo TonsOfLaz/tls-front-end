@@ -815,7 +815,6 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
   background-size: cover;
 }
 
@@ -887,7 +886,7 @@ body {
   }
   #countdown-timer {
     width: 100%;
-    top: 80%;
+    top: 75%;
     left: 0;
   }
   .navbar-brand {
@@ -901,12 +900,6 @@ body {
 @media (max-width: 767px) {
   #top-stuff {
     min-height: 0;
-  }
-  .mfp-counter {
-    right: 20px;
-  }
-  .mfp-image-holder .mfp-close {
-    right: 8px;
   }
   .navbar-brand > img {
     width: 60px !important;
